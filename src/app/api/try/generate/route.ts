@@ -2,6 +2,7 @@ import { flushTraces } from "@/lib/agent/mask";
 import { fakeGenerator, fakeMode } from "@/lib/demo/fake";
 import { generateBundle, makeGenerator, type GeneratorFn } from "@/lib/demo/generate";
 import { checkQuestion } from "@/lib/demo/ownQuestion";
+import { recordedMode } from "@/lib/demo/recorded";
 import { vocabularyOf } from "@/lib/demo/richness";
 import { demoSecret, sign } from "@/lib/demo/token";
 import { rejectCrossSite } from "@/lib/sameOrigin";
@@ -15,6 +16,7 @@ const g = globalThis as { __generator?: GeneratorFn };
 export async function POST(request: Request) {
   const blocked = rejectCrossSite(request);
   if (blocked) return blocked;
+  if (recordedMode()) return Response.json({ error: "Try your own is off while the demo shows recorded grades." }, { status: 503 });
   const body = (await request.json().catch(() => ({}))) as { question?: unknown };
   if (typeof body.question !== "string") return Response.json({ error: "Write a question." }, { status: 400 });
   const checked = checkQuestion(body.question);

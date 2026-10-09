@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { recordedMode } from "@/lib/demo/recorded";
 
 export function Nav() {
   return (
@@ -10,9 +11,11 @@ export function Nav() {
         <Link href="/grade" className="text-sm text-muted hover:text-ink">
           Grade a page
         </Link>
-        <Link href="/try" className="text-sm text-muted hover:text-ink">
-          Try your own
-        </Link>
+        {!recordedMode() && (
+          <Link href="/try" className="text-sm text-muted hover:text-ink">
+            Try your own
+          </Link>
+        )}
         <a href="https://github.com/kylecoberly/neo-graderbot" className="ml-auto text-sm text-muted hover:text-ink">
           Source &amp; evals
         </a>

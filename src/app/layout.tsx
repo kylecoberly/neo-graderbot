@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, JetBrains_Mono, Source_Sans_3 } from "next/font/google";
 import { Nav } from "@/components/demo/Nav";
+import { recordedMode } from "@/lib/demo/recorded";
 import "./globals.css";
 
 const fraunces = Fraunces({ subsets: ["latin"], axes: ["opsz"], variable: "--font-fraunces" });
@@ -17,6 +18,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${fraunces.variable} ${sourceSans.variable} ${jetbrains.variable}`}>
       <body>
         <Nav />
+        {recordedMode() && (
+          <p role="status" className="border-b border-warn/30 bg-warn-soft px-6 py-2 text-center text-sm text-warn">
+            Live grading is paused: this demo is showing recorded examples. GraderBot&apos;s grades and notes come from an earlier run of
+            the same agent, so nothing here calls a model, and the judge and &ldquo;Try your own&rdquo; are off.
+          </p>
+        )}
         {children}
       </body>
     </html>

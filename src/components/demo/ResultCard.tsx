@@ -1,4 +1,5 @@
 import { REASONS } from "@/lib/agent/reasons";
+import { recordedMode } from "@/lib/demo/recorded";
 import { WHO, type AgentState, type Entry, type JudgeRow, type Row, type VisitorGrade } from "@/lib/demo/results";
 import type { Richness } from "@/lib/demo/richness";
 import { Prose, VerdictBadge } from "../ui";
@@ -95,7 +96,7 @@ export function ResultCard({ entry, grade, agent, row, judge }: { entry: Entry; 
                 <Prose text={result.basis} className="line-clamp-3" />
               </blockquote>
             )}
-            {result && !result.live && <p className="mt-1 text-xs text-warn">Graded earlier: live grading is unavailable right now.</p>}
+            {result && !result.live && !recordedMode() && <p className="mt-1 text-xs text-warn">Graded earlier: live grading is unavailable right now.</p>}
           </>
         )}
         {judge && (

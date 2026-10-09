@@ -36,7 +36,7 @@ describe("speedLine", () => {
   it("says so when no call was live", () => {
     const s = speedLine({ gradedCount: 8, activeTotalMs: 9000, priorMedianMs: null, results: [stored()] });
     expect(s).toEqual({ kind: "unavailable" });
-    expect(speedText(s)).toBe("Live grading was unavailable, so there's no timing to compare.");
+    expect(speedText(s)).toBe("GraderBot's grades on this page were recorded earlier, so there's no live timing to compare.");
   });
 });
 

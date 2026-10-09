@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { GradingSession } from "@/components/demo/GradingSession";
 import { Button, LinkButton } from "@/components/ui";
 import { PACE_KEY, SEEN_KEY, post } from "@/lib/demo/client";
+import { recordedMode } from "@/lib/demo/recorded";
 import type { PublicAnswer, PublicQuestion } from "@/lib/demo/page";
 import { DEMO_SLICES, TOPICS } from "@/lib/topics";
 import type { Slice } from "@/lib/types";
@@ -97,7 +98,7 @@ export default function GradePage() {
               <Button variant="secondary" onClick={() => load(slice)}>
                 Grade another page
               </Button>
-              <LinkButton href="/try">Try your own question →</LinkButton>
+              {!recordedMode() && <LinkButton href="/try">Try your own question →</LinkButton>}
             </div>
           }
         />

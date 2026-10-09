@@ -2,6 +2,7 @@ import { randomUUID } from "node:crypto";
 import { flushTraces } from "@/lib/agent/mask";
 import { grade } from "@/lib/agent/run";
 import { storedResult } from "@/lib/demo/fallback";
+import { recordedMode } from "@/lib/demo/recorded";
 import { resolveItem } from "@/lib/demo/resolve";
 import { GRADE_TIMEOUT_MS, demoGraph, withTimeout } from "@/lib/demo/service";
 import { readTicket, type RunReceipt } from "@/lib/demo/tickets";
@@ -33,6 +34,17 @@ export async function POST(request: Request) {
       const send = (event: string, data: unknown) => {
         if (!closed) controller.enqueue(encoder.encode(encodeEvent(event, data)));
       };
+      // Archive pages fall back to the grade stored for them; generated ones have none.
+      const sendStored = (message: string) => {
+        const stored = ticket.kind === "page" ? storedResult(item.key) : null;
+        if (stored) send("done", { result: { key: item.key, live: false, latencyMs: null, receipt: null, ...stored } satisfies AgentResult });
+        else send("error", { message });
+      };
+      if (recordedMode()) {
+        sendStored("Live grading is off.");
+        if (!closed) controller.close();
+        return;
+      }
       const runId = randomUUID();
       const started = performance.now();
       try {
@@ -68,9 +80,7 @@ export async function POST(request: Request) {
       } catch (err) {
         // The visitor sees a stored grade either way; the log is how anyone learns why.
         console.error("demo grade failed:", err instanceof Error ? err.message : String(err));
-        const stored = ticket.kind === "page" ? storedResult(item.key) : null;
-        if (stored) send("done", { result: { key: item.key, live: false, latencyMs: null, receipt: null, ...stored } satisfies AgentResult });
-        else send("error", { message: "Live grading is unavailable right now." });
+        sendStored("Live grading is unavailable right now.");
       }
       await flushTraces();
       if (!closed) controller.close();

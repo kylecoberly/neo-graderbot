@@ -108,6 +108,13 @@ describe("POST /api/demo/judge", () => {
     expect((await call({ token, items: Array.from({ length: 9 }, (_, i) => item(page.answers[i % 8].id)) })).status).toBe(400);
   });
 
+  it("is off in recorded mode", async () => {
+    vi.stubEnv("NEXT_PUBLIC_GRADERBOT_RECORDED", "1");
+    const res = await call({ token, items: [{ key: page.answers[0].id, visitor: { verdict: "accept", note: "" } }] });
+    vi.unstubAllEnvs();
+    expect(res.status).toBe(503);
+  });
+
   it("answers 401 for a forged ticket", async () => {
     expect((await call({ token: "x.y", items: [item(page.answers[0].id)] })).status).toBe(401);
   });

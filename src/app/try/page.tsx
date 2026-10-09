@@ -5,6 +5,7 @@ import { GradingSession, type SessionQuestion } from "@/components/demo/GradingS
 import { QuestionForm } from "@/components/demo/QuestionForm";
 import { Button, LinkButton, Prose } from "@/components/ui";
 import { PACE_KEY, post, readStream } from "@/lib/demo/client";
+import { recordedMode } from "@/lib/demo/recorded";
 import type { Entry } from "@/lib/demo/results";
 
 interface Exercise { token: string; question: SessionQuestion; entries: Entry[] }
@@ -44,6 +45,22 @@ export default function TryPage() {
   }
 
   const prior = typeof window === "undefined" ? null : Number(sessionStorage.getItem(PACE_KEY)) || null;
+
+  // A bookmarked /try still lands somewhere sensible when the link is hidden.
+  if (recordedMode()) {
+    return (
+      <main className="mx-auto max-w-3xl px-6 py-16">
+        <h1 className="text-3xl">Try your own</h1>
+        <p className="mt-4 leading-relaxed text-muted">
+          Writing and grading answers to your own question needs live model calls, and those are off while this demo shows recorded
+          examples.
+        </p>
+        <div className="mt-6">
+          <LinkButton href="/grade">Grade a page instead</LinkButton>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-8">

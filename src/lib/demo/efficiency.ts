@@ -63,7 +63,7 @@ export function speedText(s: SpeedLine): string {
   if (s.kind === "agentOnly") {
     return `GraderBot graded these ${s.count} in ${formatDuration(s.agentMs)}. Grade an archive page first to see how that compares with your pace.`;
   }
-  return "Live grading was unavailable, so there's no timing to compare.";
+  return "GraderBot's grades on this page were recorded earlier, so there's no live timing to compare.";
 }
 
 export function agreement(pairs: { visitor: Verdict; agent: Verdict | null }[]): { agree: number; compared: number } {

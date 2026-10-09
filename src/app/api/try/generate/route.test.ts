@@ -40,6 +40,13 @@ describe("POST /api/try/generate", () => {
     expect((await call({ question: 5 })).status).toBe(400);
   });
 
+  it("is off in recorded mode", async () => {
+    vi.stubEnv("NEXT_PUBLIC_GRADERBOT_RECORDED", "1");
+    const res = await call({ question: "What does the cd command do?" });
+    vi.unstubAllEnvs();
+    expect(res.status).toBe(503);
+  });
+
   it("refuses another site", async () => {
     expect((await call({ question: "What does the cd command do?" }, { origin: "https://evil.example" })).status).toBe(403);
   });

@@ -1,5 +1,6 @@
 import { LinkButton } from "@/components/ui";
 import { loadGradingHours } from "@/lib/data";
+import { recordedMode } from "@/lib/demo/recorded";
 
 const n = (x: number) => x.toLocaleString("en-US");
 
@@ -29,7 +30,7 @@ export default function Landing() {
       </dl>
       <p className="mt-8 leading-relaxed">
         Try it the way I did it: grade a page of real student responses while GraderBot grades the same page, then compare your scores and
-        feedback with its, see which answers it flagged for you, and let an independent judge weigh in on both of you.
+        feedback with its{recordedMode() ? " and see which answers it flagged for you." : ", see which answers it flagged for you, and let an independent judge weigh in on both of you."}
       </p>
       <div className="mt-8 flex flex-wrap items-center gap-4">
         <LinkButton href="/grade">Grade a page</LinkButton>

@@ -75,6 +75,14 @@ describe("POST /api/demo/grade", () => {
     log.mockRestore();
   });
 
+  it("serves the stored result without calling the model in recorded mode", async () => {
+    vi.stubEnv("NEXT_PUBLIC_GRADERBOT_RECORDED", "1");
+    const { events } = parseEvents(await (await call({ token, key: page.answers[0].id })).text());
+    vi.unstubAllEnvs();
+    expect(events).toHaveLength(1);
+    expect((events[0].data as { result: AgentResult }).result).toMatchObject({ live: false, receipt: null, decision: { feedback: "Stored" } });
+  });
+
   it("has no fallback for a visitor's own question", async () => {
     control.fail = true;
     const { events } = parseEvents(await (await call({ token: custom, key: "0" })).text());

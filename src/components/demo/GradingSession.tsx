@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { gradeItem, post, runJudge } from "@/lib/demo/client";
 import { median } from "@/lib/demo/efficiency";
+import { recordedMode } from "@/lib/demo/recorded";
 import { canSubmit, feedbackPayload, receiptOf, summarise, type AgentState, type Entry, type JudgeRow, type VisitorGrade } from "@/lib/demo/results";
 import { addEvent, emptyTiming, finish, type Timing } from "@/lib/demo/timing";
 import { Button, Prose } from "../ui";
@@ -67,7 +68,7 @@ export function GradingSession(props: {
   });
 
   useEffect(() => {
-    if (mode !== "grade" || phase !== "results" || !summary.settled || judged.current) return;
+    if (recordedMode() || mode !== "grade" || phase !== "results" || !summary.settled || judged.current) return;
     judged.current = true;
     const items = entries.map((e) => ({
       key: e.key,
@@ -131,7 +132,7 @@ export function GradingSession(props: {
 
       {phase === "grading" ? (
         <>
-          <p className="text-sm text-muted">Accept or reject each answer, and leave a note where it would help the learner. GraderBot is grading the same answers now.</p>
+          <p className="text-sm text-muted">Accept or reject each answer, and leave a note where it would help the learner. {recordedMode() ? "GraderBot's recorded grades for the same answers appear when you submit." : "GraderBot is grading the same answers now."}</p>
           <div className="card divide-y divide-line p-0">
             <GradeHeader />
             {entries.map((e) => (

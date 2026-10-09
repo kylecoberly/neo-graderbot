@@ -282,6 +282,12 @@ requests per 10 minutes per IP; a page is 11). `pnpm demo:precompute` stores
 fallback grades for when a live call fails. The instructor queue stays local,
 because its state is a file.
 
+The hosted demo currently runs with `NEXT_PUBLIC_GRADERBOT_RECORDED=1`: every
+page shows those stored grades (the same Sonnet 5 agent, run once over every
+answer the demo can draw), nothing calls a model, and the judge and "Try your
+own" are off. A banner on the site says so. Run it locally with your own key
+to see it grade live.
+
 ## How I used coding assistants
 
 Claude Code wrote most of the code from a spec and a task-by-task plan I
@@ -297,7 +303,7 @@ each fixed test-first.
 ```bash
 pnpm install
 cp .env.example .env.local   # ANTHROPIC_API_KEY, LANGSMITH_API_KEY
-pnpm test                    # 397 tests, no model calls
+pnpm test                    # 401 tests, no model calls
 pnpm dev                     # http://127.0.0.1:3200
 pnpm evals:summary r1-baseline r3-policy final-sonnet   # every table above, from committed scores
 pnpm evals                   # a fresh round against your LangSmith account (costs money)

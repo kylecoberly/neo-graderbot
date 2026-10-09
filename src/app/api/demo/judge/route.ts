@@ -5,6 +5,7 @@ import { fakeMode, fakePageJudge } from "@/lib/demo/fake";
 import { storedResult } from "@/lib/demo/fallback";
 import { labelsOn, readReceipt, writeLabels } from "@/lib/demo/labels";
 import { NOTE_MAX, makePageJudge, type PageJudgeFn, type PageJudgment } from "@/lib/demo/pageJudge";
+import { recordedMode } from "@/lib/demo/recorded";
 import { resolveItem, type Item } from "@/lib/demo/resolve";
 import { readTicket } from "@/lib/demo/tickets";
 import { rejectCrossSite } from "@/lib/sameOrigin";
@@ -33,6 +34,7 @@ const g = globalThis as { __pageJudge?: PageJudgeFn };
 export async function POST(request: Request) {
   const blocked = rejectCrossSite(request);
   if (blocked) return blocked;
+  if (recordedMode()) return Response.json({ error: "The judge is off while the demo shows recorded grades." }, { status: 503 });
   const parsed = schema.safeParse(await request.json().catch(() => null));
   if (!parsed.success) return Response.json({ error: "Invalid page." }, { status: 400 });
   const { token, items } = parsed.data;
