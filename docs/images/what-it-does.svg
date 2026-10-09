@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="490" viewBox="0 0 1100 490" font-family="Source Sans 3, Helvetica, Arial, sans-serif" font-size="15">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#6f6a62"/>
+    </marker>
+    <marker id="arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#1d5f73"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="490" fill="#f4f1ea" rx="12"/>
+
+  <!-- 1. the instructor asks -->
+  <text x="40" y="44" font-size="12" font-weight="600" letter-spacing="1.5" fill="#a39d93">1 · THE INSTRUCTOR ASKS</text>
+  <g transform="translate(40,64)">
+    <circle cx="30" cy="22" r="16" fill="#fffdf9" stroke="#1f1d1a" stroke-width="2"/>
+    <path d="M4 72 Q30 40 56 72 Z" fill="#fffdf9" stroke="#1f1d1a" stroke-width="2"/>
+    <text x="30" y="92" text-anchor="middle" font-size="12" fill="#6f6a62">instructor</text>
+  </g>
+  <g transform="translate(120,70)">
+    <path d="M0 22 L12 14 L12 0 Q12 -8 20 -8 L290 -8 Q298 -8 298 0 L298 44 Q298 52 290 52 L20 52 Q12 52 12 44 L12 30 Z" fill="#fffdf9" stroke="#e4dfd5"/>
+    <text x="26" y="14" font-size="15" font-weight="600" fill="#1f1d1a">How do you remove an element</text>
+    <text x="26" y="36" font-size="15" font-weight="600" fill="#1f1d1a">from the end of an array?</text>
+  </g>
+
+  <!-- 2. learners answer -->
+  <text x="40" y="200" font-size="12" font-weight="600" letter-spacing="1.5" fill="#a39d93">2 · LEARNERS ANSWER</text>
+  <g font-size="14" fill="#1f1d1a">
+    <g transform="translate(40,218)">
+      <circle cx="14" cy="15" r="11" fill="#fffdf9" stroke="#6f6a62" stroke-width="1.5"/>
+      <rect x="36" y="0" width="300" height="30" rx="6" fill="#fffdf9" stroke="#e4dfd5"/>
+      <text x="48" y="20" font-family="JetBrains Mono, monospace" font-size="13">someArray.pop()</text>
+    </g>
+    <g transform="translate(40,262)">
+      <circle cx="14" cy="15" r="11" fill="#fffdf9" stroke="#6f6a62" stroke-width="1.5"/>
+      <rect x="36" y="0" width="300" height="30" rx="6" fill="#fffdf9" stroke="#e4dfd5"/>
+      <text x="48" y="20">.shift</text>
+    </g>
+    <g transform="translate(40,306)">
+      <circle cx="14" cy="15" r="11" fill="#fffdf9" stroke="#6f6a62" stroke-width="1.5"/>
+      <rect x="36" y="0" width="300" height="30" rx="6" fill="#fffdf9" stroke="#e4dfd5"/>
+      <text x="48" y="20">use Pop</text>
+    </g>
+    <g transform="translate(40,350)">
+      <circle cx="14" cy="15" r="11" fill="#fffdf9" stroke="#6f6a62" stroke-width="1.5"/>
+      <rect x="36" y="0" width="300" height="30" rx="6" fill="#fffdf9" stroke="#e4dfd5"/>
+      <text x="48" y="20">You would use .pop, or maybe slice?</text>
+    </g>
+  </g>
+
+  <!-- arrows into GraderBot -->
+  <g stroke="#6f6a62" stroke-width="1.5" fill="none" marker-end="url(#arrow)">
+    <path d="M380 233 L430 272"/>
+    <path d="M380 277 L430 288"/>
+    <path d="M380 321 L430 304"/>
+    <path d="M380 365 L430 320"/>
+  </g>
+
+  <!-- 3. GraderBot -->
+  <text x="440" y="200" font-size="12" font-weight="600" letter-spacing="1.5" fill="#a39d93">3 · GRADERBOT DRAFTS</text>
+  <g transform="translate(440,218)">
+    <rect width="180" height="160" rx="12" fill="#1d5f73"/>
+    <text x="90" y="32" text-anchor="middle" font-size="17" font-weight="700" fill="#fffdf9">GraderBot</text>
+    <text x="90" y="58" text-anchor="middle" font-size="13" fill="#e3eef1">reads the lesson</text>
+    <text x="90" y="78" text-anchor="middle" font-size="13" fill="#e3eef1">grades each answer</text>
+    <text x="90" y="98" text-anchor="middle" font-size="13" fill="#e3eef1">drafts the note</text>
+    <line x1="24" y1="114" x2="156" y2="114" stroke="#5d8c9b"/>
+    <text x="90" y="134" text-anchor="middle" font-size="13" font-weight="600" fill="#fffdf9">and says how sure it is,</text>
+    <text x="90" y="150" text-anchor="middle" font-size="13" font-weight="600" fill="#fffdf9">by a policy written in code</text>
+  </g>
+  <path d="M620 298 L664 298" stroke="#1d5f73" stroke-width="2" fill="none" marker-end="url(#arrow-accent)"/>
+
+  <!-- 4. the instructor's queue -->
+  <text x="668" y="200" font-size="12" font-weight="600" letter-spacing="1.5" fill="#a39d93">4 · THE INSTRUCTOR'S QUEUE</text>
+  <g transform="translate(668,218)">
+    <rect width="392" height="234" rx="10" fill="#fffdf9" stroke="#e4dfd5"/>
+    <text x="16" y="24" font-size="12" font-weight="600" fill="#6f6a62">every grade comes here; the instructor approves them</text>
+    <g font-size="13" transform="translate(16,36)">
+      <g transform="translate(0,0)">
+        <rect width="360" height="30" rx="6" fill="#e3f2e8"/>
+        <text x="10" y="20" font-weight="700" fill="#2e7d4f">Accept</text>
+        <text x="68" y="20" fill="#1f1d1a">Nice, that's it.</text>
+        <text x="350" y="20" text-anchor="end" font-size="12" fill="#1d5f73">ready ✓</text>
+      </g>
+      <g transform="translate(0,38)">
+        <rect width="360" height="30" rx="6" fill="#f8e4df"/>
+        <text x="10" y="20" font-weight="700" fill="#b3402f">Reject</text>
+        <text x="68" y="20" fill="#1f1d1a">That's the other end of the array.</text>
+        <text x="350" y="20" text-anchor="end" font-size="12" fill="#1d5f73">ready ✓</text>
+      </g>
+      <g transform="translate(0,76)">
+        <rect width="360" height="30" rx="6" fill="#e3f2e8"/>
+        <text x="10" y="20" font-weight="700" fill="#2e7d4f">Accept</text>
+        <text x="68" y="20" fill="#1f1d1a">Right method; watch the capital P.</text>
+        <text x="350" y="20" text-anchor="end" font-size="12" fill="#1d5f73">ready ✓</text>
+      </g>
+      <g transform="translate(0,114)">
+        <rect width="360" height="72" rx="6" fill="#faf0d7" stroke="#8a6116" stroke-width="1.5"/>
+        <text x="10" y="20" font-weight="700" fill="#8a6116">Reject?</text>
+        <text x="78" y="20" fill="#1f1d1a">Which one of those did you mean?</text>
+        <text x="10" y="42" font-size="12" fill="#8a6116">flagged for a closer look: medium certainty</text>
+        <text x="10" y="62" font-size="12" fill="#6f6a62">the instructor decides this one; GraderBot's draft is there to edit</text>
+      </g>
+    </g>
+  </g>
+</svg>

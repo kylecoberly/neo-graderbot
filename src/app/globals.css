@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* One small palette: warm paper, ink, one accent for GraderBot, and the two
+   verdict colours, which are used for verdicts and nothing else. */
+@theme {
+  --color-paper: #f4f1ea;
+  --color-surface: #fffdf9;
+  --color-ink: #1f1d1a;
+  --color-muted: #6f6a62;
+  --color-faint: #a39d93;
+  --color-line: #e4dfd5;
+  --color-accent: #1d5f73;
+  --color-accent-soft: #e3eef1;
+  --color-accept: #2e7d4f;
+  --color-accept-soft: #e3f2e8;
+  --color-reject: #b3402f;
+  --color-reject-soft: #f8e4df;
+  --color-warn: #8a6116;
+  --color-warn-soft: #faf0d7;
+
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+    font-size: 17px;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display font-medium tracking-tight;
+    font-variation-settings: "opsz" 144;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-line bg-surface p-5 shadow-[0_1px_2px_rgba(31,29,26,0.04)];
+  }
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.12em] text-faint;
+  }
+}

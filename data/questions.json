@@ -1,0 +1,182 @@
+[
+  {
+    "id": "html-questions-1-question-1",
+    "slice": "html",
+    "prompt": "**What is an HTML tag?**",
+    "reference": null
+  },
+  {
+    "id": "html-questions-1-question-2",
+    "slice": "html",
+    "prompt": "**What is an HTML attribute?**",
+    "reference": null
+  },
+  {
+    "id": "html-questions-1-question-3",
+    "slice": "html",
+    "prompt": "**What is a self-closing HTML tag?**",
+    "reference": null
+  },
+  {
+    "id": "html-questions-1-question-4",
+    "slice": "html",
+    "prompt": "**What is an HTML doctype?**",
+    "reference": null
+  },
+  {
+    "id": "html-questions-1-question-5",
+    "slice": "html",
+    "prompt": "**What is the `lang` attribute used for in HTML?**",
+    "reference": null
+  },
+  {
+    "id": "html-questions-1-question-6",
+    "slice": "html",
+    "prompt": "**What happens if you don't close an HTML tag?**",
+    "reference": null
+  },
+  {
+    "id": "html-questions-1-question-7",
+    "slice": "html",
+    "prompt": "**What is the difference between the `<head>` and `<body>` tags in HTML?**",
+    "reference": null
+  },
+  {
+    "id": "html-questions-1-question-8",
+    "slice": "html",
+    "prompt": "**What is the current version of HTML?**",
+    "reference": null
+  },
+  {
+    "id": "html-questions-1-question-9",
+    "slice": "html",
+    "prompt": "**What are the required elements in the `<head>` tag?**",
+    "reference": null
+  },
+  {
+    "id": "html-questions-1-question-10",
+    "slice": "html",
+    "prompt": "**What does the `<title>` tag do?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-1",
+    "slice": "arrays",
+    "prompt": "**Describe JavaScript arrays in your own words**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-2",
+    "slice": "arrays",
+    "prompt": "**How do you tell how many elements are in an array?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-3",
+    "slice": "arrays",
+    "prompt": "**How do you add an element to the end of an array?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-4",
+    "slice": "arrays",
+    "prompt": "**How do you add an element to the start of an array?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-5",
+    "slice": "arrays",
+    "prompt": "**How do you remove an element from the start of an array?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-6",
+    "slice": "arrays",
+    "prompt": "**How do you remove an element from the end of an array?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-7",
+    "slice": "arrays",
+    "prompt": "**How do you read an element from the start of an array without removing it?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-8",
+    "slice": "arrays",
+    "prompt": "**How do you read an element from the end of an array of unknown length without removing it?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-9",
+    "slice": "arrays",
+    "prompt": "**Describe 0-based indexing**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-10",
+    "slice": "arrays",
+    "prompt": "**How would you read the 6th element of an array?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-11",
+    "slice": "arrays",
+    "prompt": "**What is spreading an array? Why would you use it?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-12",
+    "slice": "arrays",
+    "prompt": "**What is an array index?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-13",
+    "slice": "arrays",
+    "prompt": "**What is an off-by-one error?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-14",
+    "slice": "arrays",
+    "prompt": "**What does `.push()` do?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-15",
+    "slice": "arrays",
+    "prompt": "**What does `.shift()` do?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-16",
+    "slice": "arrays",
+    "prompt": "**What does `.pop()` do?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-17",
+    "slice": "arrays",
+    "prompt": "**What does `.unshift()` do?**",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-18",
+    "slice": "arrays",
+    "prompt": "**Given this array:**\n\n```js\nconst fruits = [\"Apple\", \"Banana\", \"Carrot\"]\n```\n\nHow would you print the \"Carrot\" element?",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-19",
+    "slice": "arrays",
+    "prompt": "**Convert these variables to an array:**\n\n```js\nconst user1 = \"Pat\"\nconst user2 = \"Enrique\"\nconst user3 = \"Dominique\"\n```",
+    "reference": null
+  },
+  {
+    "id": "js-arrays-questions-question-20",
+    "slice": "arrays",
+    "prompt": "**Combine these two arrays:**\n\n```js\nconst firstArray = [\"A\", \"B\", \"C\"]\nconst secondArray = [\"D\", \"E\", \"F\"]\n```",
+    "reference": null
+  }
+]

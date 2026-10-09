@@ -1,0 +1,1449 @@
+{
+  "run": {
+    "model": "anthropic:claude-opus-5",
+    "graded": "2026-10-09",
+    "adjudicated": "2026-10-09"
+  },
+  "entries": [
+    {
+      "id": "a-10344",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-1",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The lesson's core claim is simply that \"arrays store collections of related items,\" and the learner's \"a stored list of objects\" conveys that same mental model (a single list holding multiple things) despite being terse. The word \"objects\" is loose given that JS objects are a distinct type and array elements are often strings/numbers, but nothing in the answer is actively false and the passages don't contrast arrays with objects. It omits indexing/length, yet the question only asked for a description.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": false
+    },
+    {
+      "id": "a-10900",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-1",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson's core point is that arrays store collections of related items; the learner's phrasing \"a stored list of related items\" matches that directly, just in compressed form. It's terse but shows the right mental model and contains nothing false, so the minimalism isn't grounds for rejection.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-9278",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-6",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The lesson explicitly defines `.shift` as removing from the front/beginning of an array and `.pop` as removing from the end. The learner answered `.shift`, which is the wrong method for removing from the end.",
+        "verdict": "reject",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10289",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-6",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question asks which method removes an element from the end of an array; the lesson's answer is `.pop`, which the learner states exactly. Terse but correct and unambiguous.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-9691",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-17",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The lesson defines `.unshift()` as adding an element to the front of an array; the learner described `.shift()` instead. This is a direct factual error about the term the question asks about.",
+        "verdict": "reject",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10218",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-17",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson's definition exactly: unshift adds an element to the front/beginning of an array. Terse but correct and complete for the question asked.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-8667",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-18",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The learner correctly identifies zero-based indexing and uses index 2 with console.log, which is exactly the lesson's point. The only flaw is naming the array `someArray` instead of `fruits`, a trivial slip that doesn't indicate a wrong mental model.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": false
+    },
+    {
+      "id": "a-8668",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-18",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner correctly identifies zero-based indexing, using index 2 to reach \"Carrot\", and wraps it in console.log as asked. The only flaw is naming the array `someArray` instead of `fruits`, which is a cosmetic slip that doesn't indicate a wrong mental model.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10689",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-2",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The learner writes \".list\" which is not a real property, but immediately refers to \"this length sum,\" so it reads as a slip rather than a wrong mental model; they correctly state that length counts items starting at 1, not zero-based, which is the key point from passage [2]. Calling it a \"method\" rather than a property is loose but not contradicted by the lesson's phrasing. The underlying understanding is right.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": false
+    },
+    {
+      "id": "a-10992",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-2",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner correctly identifies `.length` as the way to get the number of elements and shows valid syntax with console.log, matching passage [2]/[3]. The only flaw is a trailing typo ('length of the display'), which doesn't reflect a misunderstanding.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-11516",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-7",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The question targets non-destructive access by index (vs. `.shift`), and `.at(0)` is a valid JS method that returns the first element without mutating the array \u2014 the same mental model as `arrayName[0]`. The lesson only shows bracket indexing, but using `.at` isn't wrong and doesn't teach anything false.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": true
+    },
+    {
+      "id": "a-11522",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-7",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question asks how to read the first element without removing it; indexing with `[0]` is exactly the non-mutating way, contrasted with `.shift()` which removes. The answer is terse but demonstrates the right mental model and matches the lesson's zero-indexing material.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-11003",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-8",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner correctly identifies that you read without removing by bracket-indexing (rather than `.pop`) and that `.length` is involved, but the whole point of the question \u2014 that the last index is `length - 1` \u2014 is left circular ('x is the index position of the last element'). Given the lesson explicitly flags off-by-one errors as the hazard here, the answer dodges the one computation being tested.",
+        "verdict": "reject",
+        "certainty": "medium"
+      },
+      "concede": false
+    },
+    {
+      "id": "a-10749",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-4",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question asks which method adds an element to the start of an array; the learner answered `.unshift`, which matches the lesson exactly. It is terse but correct and shows the right mental model.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-9646",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-2",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer names `.length`, which matches passage [2] and the example in [3]. It is terse but correct and shows the right mental model.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10792",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-18",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question asks how to print the \"Carrot\" element; the learner uses index 2 with console.log, which matches the lesson's zero-based indexing example exactly.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-11371",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-16",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson definition exactly: .pop removes an element from the end of the array. Mentioning the return value or mutation isn't required by the question.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-12922",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-18",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question asks how to print the \"Carrot\" element; the answer uses the correct zero-based index 2 with console.log, matching the lesson's indexing passage exactly.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10747",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-8",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The core mental model is correct: the last element is at index length - 1 and bracket access reads without mutating, which is exactly what the question targets (as opposed to `.pop`). The slip is writing `.length()` as a method call when the lesson shows `someArray.length` as a property \ninconsistent with the lesson and would actually throw, but it reads as a syntax slip rather than a misunderstanding of the concept being tested.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": false
+    },
+    {
+      "id": "a-8669",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-19",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner correctly converts the three separate variables into a single array literal with the same values in order, matching the lesson's shoppingList pattern. Syntax is valid (trailing comma is fine in JS).",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10788",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-16",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson's definition exactly: `.pop` removes an element from the end of an array. It omits that it returns the removed element and mutates the array, but the question only asks what it does and the lesson's terminology definition is the same.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-12912",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-13",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner identifies the lesson's exact scenario \"accessing index equal to the array's length\" and gives the correct reason: zero-based indexing means the last valid index is length - 1. Wording is informal (\"access an array equal to it's length\" should be \"index\") and the definition is narrower than off-by-one errors in general, but the mental model matches the lesson passage and teaches nothing false.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10793",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-13",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer captures the core idea the lesson teaches: an off-by-one error is going one past (or short of) the valid range because indexes are zero-based, leading to accessing an index that doesn't exist. The wording is slightly garbled ('access an array that might not exist' instead of 'index'), but the mental model is correct and matches the lesson's loop example.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-8637",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-4",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question asks which method adds an element to the start of an array; the learner answered `.unshift`, which matches the lesson exactly. It is terse but correct and shows the right mental model.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-9817",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-9",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner states the index starts counting at 0, which matches the lesson's definition that the first item has index 0, the second has 1, and so on. It is terse but conveys the correct mental model with nothing false in it.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-12924",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-20",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner correctly uses `.concat` to join the two arrays, which produces [\"A\",\"B\",\"C\",\"D\",\"E\",\"F\"] and shows the right mental model for combining arrays (spread would also work). The capitalized `Const` is a trivial typo, not a conceptual error.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-12818",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-5",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson states `.shift` removes an element from the beginning of an array, which is exactly what the learner answered. It is terse but correct and matches the lesson's specific terminology.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-12823",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-10",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question tests zero-based indexing: the 6th element is at index 5, which the answer gets right with correct bracket syntax. Minor framing (wrapping in console.log) doesn't detract.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-9752",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-14",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson's definition of push exactly: adds an element to the end of an array. It omits the mutation detail, but the question only asks what push does, and this is the core idea.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10981",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-9",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner correctly states that counting starts at 0 and the first element's index is 0, matching the lesson's definition of zero-based indexing. It's informal but the mental model is right and nothing false is taught.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10364",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-8",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner identifies the two key moves: use `.length` to find where the end is, and access the element by index (bracket notation) rather than `.pop`, which satisfies the 'without removing it' requirement. The answer omits the explicit `- 1`, which the lesson stresses via the off-by-one warning, so it is incomplete, but it does not assert anything false and shows the right mental model of non-mutating indexed access computed from length.",
+        "verdict": "accept",
+        "certainty": "low"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-11770",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-6",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson defines `.pop` as the method that removes an element from the end of an array, which is exactly what the learner answered. It's terse but correct and unambiguous.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10686",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-1",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner captures the lesson's core definition \"arrays store collections of related items\" and correctly notes the square-bracket literal syntax. The trailing clause about items being \"insufficient as data types\" is murky and inaccurate (array elements are perfectly valid values on their own), but it reads as a garbled gesture at the lesson's motivation that separate variables are unwieldy, not as a confident false claim that would overturn the correct mental model shown.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10770",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-14",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson's definition of push exactly: adding an element to the end of an array. It omits that it mutates the original array, but the question only asks what push does, and the core definition is correct.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-8636",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-3",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question asks which method adds an element to the end of an array; the lesson's answer is `.push`, which the learner states exactly. It is terse but correct and shows the right mental model.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10035",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-7",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The correct approach is bracket notation on the array itself, e.g. `myArray[0]`, which reads without mutating. The learner's `.index[0]` invents a non-existent `index` property and is not valid JavaScript; while it hints they know position 0 matters, the syntax as written would mislead and doesn't demonstrate the access pattern correctly.",
+        "verdict": "reject",
+        "certainty": "medium"
+      },
+      "concede": true
+    },
+    {
+      "id": "a-11004",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-15",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson definition: .shift removes an element from the beginning/front of the array. Only a trivial typo ('and' for 'an'), which doesn't affect correctness.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-9649",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-3",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The core answer, `.push`, matches the lesson exactly. The second half is sloppily written (`...array, [number]` rather than `[...array, newElement]`) but it gestures at the valid spread-based approach of building a new array with the element appended, and it doesn't contradict the lesson or teach anything false about push.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-11360",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-11",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson frames spreading specifically as the non-mutating alternative to push/unshift \"that preserves the original array,\" and the learner's answer never mentions that; worse, saying it \"allows you to add to an existing array\" describes what spread does *not* do and could teach the learner that it mutates the original. The second sentence shows a vague grasp that the items get copied into another list, but the core reason the lesson gives is missing.",
+        "verdict": "reject",
+        "certainty": "medium"
+      },
+      "concede": true
+    },
+    {
+      "id": "a-10032",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-4",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question asks which method adds an element to the start of an array; the lesson's answer is `.unshift`, which the learner gave exactly. Terse but correct and unambiguous.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-11373",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-18",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer correctly uses zero-based indexing to access the third element and prints it with console.log, exactly matching the lesson's indexing example.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-8662",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-12",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson defines index as \"a number representing the location of an individual element,\" and the learner's answer captures exactly that core idea. It omits the zero-based detail, but the question only asks what an index is, and nothing stated is false.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-9273",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-2",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question asks how to find the number of elements; `.length` is exactly the lesson's answer (passage [2], [3]). Terse but shows the right mental model with no false statement.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10772",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-16",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson's definition exactly: `.pop` removes an element from the end of the array. It omits that it returns the removed element and mutates the original, but the question only asks what it does and the core mental model is correct.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-9756",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-18",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner correctly identifies zero-based indexing and uses index 2 to reach \"Carrot\", wrapped in console.log; the only flaw is using a placeholder name instead of `fruits`, which doesn't indicate a wrong mental model.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10799",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-17",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson's definition: unshift adds an element to the front/beginning of an array. Informal but correct mental model.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10771",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-15",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson definition exactly: `.shift` removes an element from the front/beginning of the array. Nothing false is taught; the mutating nature and return value weren't asked for.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-20073",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-13",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner correctly identifies the core idea: zero-based indexing means a three-item array has indexes 0-2, so accessing someArray[3] goes one past the end. This matches the lesson's loop example and shows the right mental model despite informal phrasing.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-12815",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-2",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer names `.length`, which is exactly what the lesson teaches, and the added mention of counting manually is impractical but not incorrect or misleading. It shows the right mental model even if informally stated.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10785",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-14",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer states exactly what the lesson's terminology section says: push adds an element to the end of an array. It omits that it mutates the original, but the question only asks what push does, and the core definition is correct.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10727",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-5",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question asks how to remove an element from the start of an array; the learner answers with `.shift()`, which matches the lesson exactly. Code-only form is fine here since it demonstrates the correct method.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-12055",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-13",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson frames the off-by-one error as a loop boundary mistake arising from zero-based indexing, where `i <= length` reaches an index one past the end. The learner's answer captures exactly that mental model \"accessing an index that doesn't exist because indexes start at 0 \" even if it doesn't spell out the loop condition example. Informal and slightly compressed, but nothing false is taught.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-11767",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-3",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question asks how to add an element to the end of an array; the lesson's answer is `.push`. The learner's answer names exactly the correct method, which demonstrates the right mental model even though it's terse.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-11370",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-15",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson definition exactly: `.shift` removes an element from the front/beginning of an array. Nothing incorrect; mentioning the return value or mutation isn't required by the question.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-9753",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-15",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson definition exactly: `.shift` removes an element from the front/beginning of the array. Nothing false or missing for the scope of the question.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-12820",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-7",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question targets using bracket access at index 0 rather than .shift(), and the learner correctly identifies reading via index 0 with the zero-based rationale. Mentioning console.log is incidental noise (a way to display the value) and doesn't introduce a false idea; the core mental model is right.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-12054",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-12",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The lesson defines an index as a number representing the location of an individual element; the learner instead describes the array's contents (elements). This is a wrong definition, not just incomplete.",
+        "verdict": "reject",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-10352",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-5",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The lesson defines `.shift` as removing an element from the beginning of an array, which is exactly what the learner says, though stated very tersely. Capitalization is a trivial issue, not a conceptual error.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": false
+    },
+    {
+      "id": "a-9757",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-19",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The learner correctly collapses the three separate variables into a single array of strings, which is exactly the mental model the lesson is teaching. The only flaw is a missing closing quote after \"Pat, a transcription typo rather than a conceptual error, and nothing about it would teach a false idea about arrays.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": false
+    },
+    {
+      "id": "a-11357",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-8",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The learner identifies the right approach: use the array's length to compute the final index and read the element by index rather than using .pop, which is the core of the question (read without removing). Minor flaws \ba writing `.length()` as if it were a method and not spelling out `length - 1` \ba are notation/incompleteness issues; saying \"that last index number\" avoids actually asserting the off-by-one mistake.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": false
+    },
+    {
+      "id": "a-4388",
+      "slice": "html",
+      "questionId": "html-questions-1-question-9",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The lesson explicitly lists two required elements inside `<head>`: `<title>` and `<meta charset=\"utf-8\" />`, stressing that the charset meta is 'a required element of the page'. The learner names only `<title>` and omits the meta charset entirely, so the answer misses half of what the question asks about.",
+        "verdict": "reject",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-5420",
+      "slice": "html",
+      "questionId": "html-questions-1-question-9",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson lists two required children of `<head>`: `<title>` and `<meta charset=\"utf-8\" />`. The learner names only the meta charset tag and omits `<title>`, so half of the answer the question asks for is missing; nothing stated is false, but the response is incomplete on the exact point being tested.",
+        "verdict": "reject",
+        "certainty": "medium"
+      },
+      "concede": true
+    },
+    {
+      "id": "a-3384",
+      "slice": "html",
+      "questionId": "html-questions-1-question-9",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The learner correctly identifies both elements the lesson lists inside `<head>`: `<title>` and `<meta charset=\"utf-8\" />`, which is what the question is actually asking. The opening quip that \"there are no REQUIRED elements\" conflicts with the lesson's wording (it explicitly calls charset \"a required element of the page\"), but it echoes passage [2] on browsers silently correcting omissions and is immediately walked back by naming the minimums, so the mental model is right rather than false.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": false
+    },
+    {
+      "id": "a-6427",
+      "slice": "html",
+      "questionId": "html-questions-1-question-9",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson lists `<title>` and `<meta charset=\"utf-8\" />` as the required elements inside `<head>`, which is exactly what the learner names. Terse but correct.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-5999",
+      "slice": "html",
+      "questionId": "html-questions-1-question-4",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The lesson says `<!doctype html>` declares the document is written in HTML5 rather than a previous version; the learner captures that it declares the file as an HTML document and appears at the top. The answer omits the HTML5-versioning nuance but the core mental model (a declaration of document type at the start of the file) is correct, and the typos (HMTL) are harmless.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": true
+    },
+    {
+      "id": "a-7848",
+      "slice": "html",
+      "questionId": "html-questions-1-question-4",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner states the doctype declares the document is written in HTML5, which matches the lesson's definition. The snippet omits the 'html' keyword (`<!doctype>` rather than `<!doctype html>`), but the lesson's own code block shows `<!doctype>` in the same abbreviated way, so this mirrors the passage rather than teaching something false.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3959",
+      "slice": "html",
+      "questionId": "html-questions-1-question-2",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The answer correctly places attributes in the opening tag, but states their purpose is to specify the type of element, which is false \ninstead the tag name determines the element type, while attributes supply additional information or configuration (e.g. id, class, src, required). This misstatement would teach the learner something wrong.",
+        "verdict": "reject",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4377",
+      "slice": "html",
+      "questionId": "html-questions-1-question-2",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson's passages only show attributes in examples (id, class, type, required, src, alt), so the expected mental model is: extra information/configuration placed inside an element's opening tag, usually as name=\"value\" pairs. The learner's answer captures that it goes with the tag and provides additional information (path/link being examples like src/href), which is the right idea even if informally worded and missing the name=value detail.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-2376",
+      "slice": "html",
+      "questionId": "html-questions-1-question-5",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "The lesson states `<html lang=\"en\">` indicates the language of the content; the learner's answer matches that exactly, if tersely.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": true
+    },
+    {
+      "id": "a-4484",
+      "slice": "html",
+      "questionId": "html-questions-1-question-5",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson states `<html lang=\"en\">` indicates the language of the content; the learner's answer matches that exactly, with reasonable examples.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3519",
+      "slice": "html",
+      "questionId": "html-questions-1-question-6",
+      "instructor": "reject",
+      "second": {
+        "reasoning": "HTML is error-tolerant: an unclosed tag does not produce an error \ni\nt causes the browser to guess, so the element silently swallows following content and renders unexpectedly (the lesson's point in [2] is precisely that such mistakes are hard to notice, not that they're flagged). The learner's claim that 'you will get an error' misstates how browsers handle malformed HTML and misses the actual consequence being asked about.",
+        "verdict": "reject",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3914",
+      "slice": "html",
+      "questionId": "html-questions-1-question-6",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner captures the key idea: HTML doesn't hard-fail on an unclosed tag; instead the omission propagates, swallowing or disrupting subsequent elements and producing unexpected rendering. The hedge about 'may cause an error' is informal but doesn't teach anything false, since it's immediately subordinated to the correct point about cascading structural problems.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4953",
+      "slice": "html",
+      "questionId": "html-questions-1-question-1",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson frames a tag as a named markup unit (name + attributes, usually an opening/closing pair) that wraps and describes the meaning of content; the learner instead defines it as 'the beginning of a directive' telling the browser 'how content should be viewed,' which conflates HTML with presentation/styling and omits the wrapping/semantic role. Calling it only the 'beginning' also ignores closing and self-closing tags. This wording would teach a false model of what HTML markup does.",
+        "verdict": "reject",
+        "certainty": "medium"
+      },
+      "concede": true
+    },
+    {
+      "id": "a-5643",
+      "slice": "html",
+      "questionId": "html-questions-1-question-8",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson explicitly states the current version is HTML5, and the answer matches exactly.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-2378",
+      "slice": "html",
+      "questionId": "html-questions-1-question-6",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner captures the core idea: without a closing tag, subsequent content gets absorbed into that element and the page renders incorrectly. Saying 'part of the tag' rather than 'part of the element's content' is loose phrasing, but the mental model (the element keeps swallowing what follows) is correct and doesn't teach anything false.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4959",
+      "slice": "html",
+      "questionId": "html-questions-1-question-5",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson states `<html lang=\"en\">` indicates the language of the content; the learner's answer says exactly that, just tersely. It's minimal but shows the correct mental model with nothing false.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-5651",
+      "slice": "html",
+      "questionId": "html-questions-1-question-10",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson states `<title>` is what name shows up in the browser tab, and the learner's answer matches that exactly, just slightly awkwardly worded. No false mental model is conveyed.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4960",
+      "slice": "html",
+      "questionId": "html-questions-1-question-6",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The expected idea is that an unclosed tag makes the document structure ambiguous \ninvalid markup \nwhere the browser guesses, typically swallowing subsequent content into the open element and producing unpredictable rendering/debugging pain (per the style passage about hard-to-spot unclosed tags). \"The tag will not function\" is both vague and inaccurate: browsers don't simply ignore the tag; it usually still applies, often to far more content than intended.",
+        "verdict": "reject",
+        "certainty": "medium"
+      },
+      "concede": true
+    },
+    {
+      "id": "a-3840",
+      "slice": "html",
+      "questionId": "html-questions-1-question-4",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson defines the doctype as declaring the document is written in HTML5 rather than a previous HTML version; the learner captures exactly that, noting modern documents use HTML5. Minor informality ('all documents right now') doesn't teach anything false.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3103",
+      "slice": "html",
+      "questionId": "html-questions-1-question-2",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner captures the core mental model: an attribute lives inside the element's tag and modifies/configures the element's behavior or information. It omits the name=\"value\" syntax and that attributes appear in the opening tag (as shown in the `<input id=\"some-id\" ... required />` example), but nothing stated is false or misleading.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4904",
+      "slice": "html",
+      "questionId": "html-questions-1-question-2",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson only shows attributes in examples (id, class, type, required, min, max) without a formal definition; the learner's answer captures the correct mental model \\u2014 attributes live on a tag and supply extra information/configuration about the element. It's informal and omits the name=\\\"value\\\" syntax placed in the opening tag, but nothing stated is false or misleading.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3962",
+      "slice": "html",
+      "questionId": "html-questions-1-question-4",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson says `<!doctype html>` declares the document is written in HTML5 rather than a previous version of HTML; the learner's answer captures exactly that \\u2014 a required declaration telling the browser which HTML version is used. Wording is slightly ungrammatical but the mental model is correct.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-5996",
+      "slice": "html",
+      "questionId": "html-questions-1-question-2",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer captures the core idea that attributes provide additional information/configuration for an element, which matches the lesson's usage (id, class, type, required on an <input>). It omits mechanical details like name=\"value\" pairs placed in the opening tag, but nothing stated is wrong and the mental model is right.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-5752",
+      "slice": "html",
+      "questionId": "html-questions-1-question-6",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson's point is that unclosed tags fail silently \ncontent gets swallowed into the open element and the page renders in unexpected ways, with nothing flagging the mistake (hence the formatting advice to make it noticeable). The learner's answer asserts \"you get an error,\" which misstates HTML's error-tolerant behavior, and the trailing \"might not display on the page\" is too vague to show the key idea that the browser recovers silently and renders something wrong. It neither names the consequence nor correctly characterizes the failure mode.",
+        "verdict": "reject",
+        "certainty": "medium"
+      },
+      "concede": true
+    },
+    {
+      "id": "a-5995",
+      "slice": "html",
+      "questionId": "html-questions-1-question-1",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner captures the core idea that a tag marks up content and that you choose among many tags depending on the content/purpose, which echoes the lesson's \"tag names indicate what a tag means.\" It omits the anatomy details (name, attributes, opening/closing or self-closing pair wrapping content) and leans a bit presentation-centric with \"so it can be displayed in a browser,\" but nothing stated is false enough to instill a misconception.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3108",
+      "slice": "html",
+      "questionId": "html-questions-1-question-6",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The question targets the idea that an unclosed tag leaves the markup ambiguous and the browser's recovery behavior is not something you can rely on. The learner captures exactly that: browsers may attempt to fix it, behavior varies, and correct rendering isn't guaranteed. Informal and brief, but the mental model is right and nothing taught is false.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3524",
+      "slice": "html",
+      "questionId": "html-questions-1-question-8",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson states the current version of HTML is HTML5, and the learner answered exactly that. Nothing more is required for this factual recall question.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4911",
+      "slice": "html",
+      "questionId": "html-questions-1-question-4",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson's definition of `<!doctype html>` almost verbatim: it declares the document is HTML5 rather than a previous HTML version. Nothing false or missing for the scope of the question.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4442",
+      "slice": "html",
+      "questionId": "html-questions-1-question-4",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson defines `<!doctype html>` as declaring the document is written in HTML5 rather than a previous version of HTML. The learner's answer matches this directly, just omitting the 'rather than an earlier version' contrast, which is implied.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-2375",
+      "slice": "html",
+      "questionId": "html-questions-1-question-4",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson says `<!doctype html>` declares the document is written in HTML5 rather than a previous version of HTML; the learner's answer captures exactly that, plus the fact that it appears first in the document. Informal phrasing ('line of code') is acceptable at this bar.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3593",
+      "slice": "html",
+      "questionId": "html-questions-1-question-2",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer identifies an attribute as a part written inside an HTML tag that supplies extra information or configures/describes the element, which matches the lesson's examples (id, class, type, required). It is grammatically tangled and omits the name=\"value\" form and that attributes live in the opening tag, but it teaches nothing false and shows the right mental model.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-5998",
+      "slice": "html",
+      "questionId": "html-questions-1-question-3",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson defines a self-closing tag simply as one that has no separate closing tag and closes itself, which is exactly what the learner wrote. It's minimal (doesn't mention that such tags wrap no content or the `/>` syntax), but it shows the correct mental model and teaches nothing false.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-2372",
+      "slice": "html",
+      "questionId": "html-questions-1-question-2",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer correctly captures the core idea: attributes are added to a tag (in the opening tag) to describe or modify the element, matching examples like id, class, type, required in the lesson. It omits the name=\"value\" syntax detail, but that's an acceptable incompleteness, not a wrong model; the loose use of \"properties\" is colloquial but not misleading at this level.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4440",
+      "slice": "html",
+      "questionId": "html-questions-1-question-3",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson defines a self-closing tag as one that has no separate closing tag and closes itself (e.g. `<img />`). The answer's phrasing ('does not require a set of brackets') is garbled, and the example given, `<p></p>`, is a paired opening/closing tag \u2014 the opposite of a self-closing tag \u2014 so it would teach the learner something false.",
+        "verdict": "reject",
+        "certainty": "high"
+      },
+      "concede": false
+    },
+    {
+      "id": "a-3111",
+      "slice": "html",
+      "questionId": "html-questions-1-question-9",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson lists `<title>` and `<meta charset=\"utf-8\" />` as the required elements inside `<head>`; the answer names both, just tersely. Informal shorthand but the mental model is right.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4962",
+      "slice": "html",
+      "questionId": "html-questions-1-question-8",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson states plainly that the current version is HTML5, and the learner's answer matches exactly. Nothing more is required for this factual recall question.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4451",
+      "slice": "html",
+      "questionId": "html-questions-1-question-9",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson lists `<title>` and `<meta charset=\"utf-8\" />` as the required elements inside `<head>`, and notes it also holds linked CSS/JS and meta info. The learner names both required elements and correctly adds the optional CSS/JS contents, showing the right mental model despite informal phrasing.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4957",
+      "slice": "html",
+      "questionId": "html-questions-1-question-3",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson's definition: a tag with no separate closing tag that closes itself. The examples are acceptable \\u2014 <img> and <link> are both void/self-closing elements (if they meant the anchor tag that would be wrong, but 'link tag' most naturally reads as <link>). Typo ('noy') doesn't obscure the right mental model.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4964",
+      "slice": "html",
+      "questionId": "html-questions-1-question-10",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson says `<title>` is the name that shows up in the browser tab; the learner says it's the page title that shows up on the browser, which conveys the right idea (not page content, but browser-level naming), just less precise. Typo 'broweser' is harmless and nothing false is taught.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3107",
+      "slice": "html",
+      "questionId": "html-questions-1-question-5",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson states `<html lang=\"en\">` 'indicates the language of the content,' which is exactly what the learner wrote. Brief but correct and matches the lesson's definition.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-6007",
+      "slice": "html",
+      "questionId": "html-questions-1-question-9",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner correctly identifies the two required elements of `<head>` per passage [1]: `<title>` and `<meta charset=\"utf-8\" />`, demonstrated in a code snippet with the answer stated in the title text. The capitalized `<Meta>` violates the lowercase convention and the snippet omits `</head>`, but HTML is case-insensitive per the lesson and neither flaw misstates the actual content asked about.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-2371",
+      "slice": "html",
+      "questionId": "html-questions-1-question-1",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "Part 1 captures the lesson's core model: a tag is markup that marks the start/end of an element (opening/closing pairs wrapping content), which is informal but correct; it just doesn't elaborate that the tag name conveys meaning or that some tags self-close. Part 2 drifts to describing the specific `<html>` root element, which is a tangent but factually accurate and doesn't teach anything false.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4450",
+      "slice": "html",
+      "questionId": "html-questions-1-question-7",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer captures exactly the lesson's distinction: <head> holds non-displayed metadata/resources, <body> holds content intended to show on the page. Informal but correct and complete for the question's scope.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4936",
+      "slice": "html",
+      "questionId": "html-questions-1-question-9",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner names both required head elements from the lesson \u2014 `<title>` (browser tab name) and `<meta charset=\"utf-8\" />` (character encoding) \u2014 matching passage [1]. The informal tone doesn't introduce anything false.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3321",
+      "slice": "html",
+      "questionId": "html-questions-1-question-4",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson states `<!doctype html>` declares the document is written in HTML5 rather than a previous version of HTML. The learner's answer captures exactly this: it declares which HTML version the document uses.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-5630",
+      "slice": "html",
+      "questionId": "html-questions-1-question-4",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson defines `<!doctype html>` as declaring the document is written in HTML5 rather than a previous version of HTML. The learner's answer captures exactly this: a declaration to the browser of the document type / HTML version. Informal but the mental model is correct.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-5613",
+      "slice": "html",
+      "questionId": "html-questions-1-question-1",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner correctly describes a tag as markup that delimits an element, and correctly notes the opening/closing pair versus self-closing distinction from passage [1]. It omits attributes and the point that the tag name indicates meaning, but nothing stated is false and the mental model matches the lesson.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-5745",
+      "slice": "html",
+      "questionId": "html-questions-1-question-5",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner does state the key point \\u2014 the `lang` attribute indicates the language of the document's content \\u2014 which matches passage [1]. The leading clause ('all HTML content must go inside this') is lifted from the lesson's bullet about the `<html>` element itself and is misattributed to the attribute, which is sloppy, but the correct core idea is clearly present and the error is a copy-paste artifact rather than a wrong mental model.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4931",
+      "slice": "html",
+      "questionId": "html-questions-1-question-7",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer states exactly the lesson's distinction: head holds content not displayed on the page (meta/links), body holds content intended to display. Phrasing is slightly awkward in the second sentence but conveys the correct mental model with no false implication.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4390",
+      "slice": "html",
+      "questionId": "html-questions-1-question-10",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson defines `<title>` as the name that appears in the browser tab, i.e., metadata naming the document rather than on-page content. The learner's answer is essentially a restatement of the tag name and omits the distinctive detail (shown in the tab, not on the page), but it is not incorrect and conveys that the tag names the document rather than rendering visible page content. This reads as slightly thin/incomplete rather than wrong or misleading.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3102",
+      "slice": "html",
+      "questionId": "html-questions-1-question-1",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner describes a tag as markup that delimits the beginning and end of an element, which matches the lesson's opening/closing pair wrapping content, even if it omits the semantic role of the tag name and attributes. Nothing in it is false enough to mislead (self-closing tags are a minor edge case), and the core mental model of tags as element boundaries is right.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4906",
+      "slice": "html",
+      "questionId": "html-questions-1-question-3",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson's definition: some tags have no separate closing tag and close themselves, and <img> is a correct example used in the lesson. The flippant phrasing doesn't introduce anything false.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4445",
+      "slice": "html",
+      "questionId": "html-questions-1-question-10",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson defines `<title>` as the name shown in the browser tab; the learner says it provides the name shown in the browser, which matches the intended meaning even though it omits the word 'tab'. Slightly imprecise but it does not teach anything false, and no claim is made that it appears on the page.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3830",
+      "slice": "html",
+      "questionId": "html-questions-1-question-1",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner captures the core mental model: a tag names/indicates the kind of element and marks where it begins and ends (opening/closing pair), matching the lesson's 'tag name indicates what a tag means' and opening/closing wrapping content. Calling it 'markup language' rather than 'markup' is loose phrasing but doesn't teach anything substantively false; attributes and self-closing tags are omitted but the question asks only what a tag is.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-2384",
+      "slice": "html",
+      "questionId": "html-questions-1-question-10",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson states `<title>` is what name shows up in the browser tab, and the answer matches that exactly. Nothing false or missing for the scope of the question.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4961",
+      "slice": "html",
+      "questionId": "html-questions-1-question-7",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The answer matches the lesson's distinction exactly: head holds content not meant to display on the page (metadata, links), body holds content intended to show. It's concise but captures the core mental model.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4541",
+      "slice": "html",
+      "questionId": "html-questions-1-question-3",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner captures the core idea: a self-closing tag has no separate opening/closing pair and wraps no content, so its information lives in its attributes \"closes itself\". The phrasing \"there is no opening and closing tags\" is loose but clearly means there's no matching pair rather than something false, and the attribute point matches the lesson's examples like `<img />` and `<input ... />`.",
+        "verdict": "accept",
+        "certainty": "medium"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-4943",
+      "slice": "html",
+      "questionId": "html-questions-1-question-10",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson says `<title>` is \"what name will show up in the browser tab,\" and the learner's answer states exactly that. It's informal but matches the lesson's meaning precisely.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3838",
+      "slice": "html",
+      "questionId": "html-questions-1-question-3",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The learner's answer matches the lesson's definition verbatim in substance: some tags have no separate closing tag and close themselves. No false statements; minor typo only.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    },
+    {
+      "id": "a-3643",
+      "slice": "html",
+      "questionId": "html-questions-1-question-10",
+      "instructor": "accept",
+      "second": {
+        "reasoning": "The lesson says `<title>` is what name shows up in the browser tab, and it lives in `<head>`. The learner says the text becomes the title shown in the browser's title bar and that it's found inside `<head>`, which matches the lesson's mental model (tab/title bar is a minor wording difference). Calling it 'an opening tag' is slightly loose but not misleading.",
+        "verdict": "accept",
+        "certainty": "high"
+      },
+      "concede": null
+    }
+  ]
+}

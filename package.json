@@ -1,0 +1,63 @@
+{
+  "name": "neo-graderbot",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "dev": "next dev -H 127.0.0.1 -p 3200",
+    "build": "next build",
+    "start": "next start -H 127.0.0.1 -p 3200",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "export": "tsx scripts/export.mts",
+    "smoke": "tsx scripts/smoke-judge.mts",
+    "evals": "vitest run --config vitest.evals.config.mts",
+    "evals:baseline": "AGENT_RETRIEVAL=off AGENT_POLICY=off EVAL_LABEL=r1-baseline EVAL_REPETITIONS=3 vitest run --config vitest.evals.config.mts",
+    "evals:retrieval": "AGENT_POLICY=off EVAL_LABEL=r2-retrieval EVAL_REPETITIONS=3 vitest run --config vitest.evals.config.mts",
+    "evals:policy": "EVAL_LABEL=r3-policy EVAL_REPETITIONS=3 vitest run --config vitest.evals.config.mts",
+    "evals:sonnet": "AGENT_MODEL=anthropic:claude-sonnet-5 EVAL_LABEL=final-sonnet EVAL_REPETITIONS=1 EVAL_JUDGE=off vitest run --config vitest.evals.config.mts",
+    "evals:summary": "tsx evals/summary.mts",
+    "evals:experiments": "tsx evals/experiments.mts",
+    "calibrate": "tsx scripts/calibrate-judge.mts",
+    "audit:labels": "tsx scripts/audit-labels.mts",
+    "evals:fix": "EVAL_REPETITIONS=3 EVAL_JUDGE=off vitest run --config vitest.evals.config.mts",
+    "evals:failures": "tsx evals/failures.mts",
+    "evals:replay": "tsx evals/replay-cli.mts",
+    "evals:compare": "tsx evals/compare-cli.mts",
+    "evals:regrade": "tsx evals/regrade-cli.mts",
+    "demo:pool": "tsx scripts/demo-pool.mts",
+    "e2e": "tsx e2e/demo.e2e.mts",
+    "demo:precompute": "tsx scripts/demo-precompute.mts"
+  },
+  "dependencies": {
+    "@langchain/anthropic": "^1.5.11",
+    "@langchain/core": "^1.2.13",
+    "@langchain/langgraph": "^1.4.18",
+    "langsmith": "^0.10.4",
+    "next": "16.3.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.3",
+    "jsdom": "^30.0.1",
+    "playwright-core": "^1.64.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.0.0"
+  },
+  "packageManager": "pnpm@11.5.1"
+}

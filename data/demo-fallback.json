@@ -1,0 +1,1559 @@
+{
+  "a-10019": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nice, exactly right."
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-10030": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": ".length returns how many items are in the array."
+  },
+  "a-10033": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-10034": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct."
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-10035": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "There's no `.index` property on arrays—how would you actually reference the first slot of the array?"
+    },
+    "certainty": "medium",
+    "basis": "The lesson explains .push/.pop/.unshift/.shift but doesn't mention a `.index` property; accessing an element without removing is done with bracket notation like `array[0]`."
+  },
+  "a-10036": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "The syntax here isn't quite right — `.index` isn't a thing. How would you actually calculate the last index using something the array already knows about itself?"
+    },
+    "certainty": "medium",
+    "basis": "Array indexes start at 0, not 1. ... Use array.length - 1 to find last index (implied pattern for accessing array elements by index)."
+  },
+  "a-10038": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Index is the right idea, but that's not how you write it in code—try again with the actual array syntax."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-10047": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Exactly right."
+    },
+    "certainty": "high",
+    "basis": "const shoppingList = [\"Apple\",\"Banana\",\"Carrot\",]"
+  },
+  "a-10048": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "Nice use of spread syntax, but you hardcoded the values instead of actually combining with secondArray."
+    },
+    "certainty": "medium",
+    "basis": "const secondArray = [\"D\", \"E\", \"F\"]"
+  },
+  "a-10215": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct, index 5 gives the 6th element."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-10220": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "That's removing from the front, not the end—check the terminology again."
+    },
+    "certainty": "high",
+    "basis": "Pop: Remove an element from the end of an array"
+  },
+  "a-10222": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Push adds to the end—check the method that removes from the front."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-10223": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "slice(-1) actually gives you an array containing the last element, not the element itself—think about how you'd grab just that value using its position."
+    },
+    "certainty": "medium",
+    "basis": "Index: A number representing the location of an individual element"
+  },
+  "a-10288": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-10289": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct."
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-10315": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Right idea with length-1 for the last index—just watch your syntax, `console.log` takes parentheses, not square brackets."
+    },
+    "certainty": "medium",
+    "basis": "Index: A number representing the location of an individual element"
+  },
+  "a-10347": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct."
+    },
+    "certainty": "high",
+    "basis": "`.length` returns how many items are in the array."
+  },
+  "a-10352": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-10353": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "You've got the right idea with length-1, but the syntax here is tangled — walk through what each line actually does step by step."
+    },
+    "certainty": "medium",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-10354": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-10359": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, `array[0]` does it without removing anything."
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-10364": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "You're on the right track with using .length, but what index does that actually give you for the last element?"
+    },
+    "certainty": "medium",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-10369": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct, index 5 gets you the 6th element."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-10668": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "That's it."
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-10674": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nice, spread syntax combines them cleanly."
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-10675": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct, spread syntax combines them nicely."
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-10689": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "Your explanation of how it counts is right, but you've named the wrong property/method here — double check what it's actually called."
+    },
+    "certainty": "medium",
+    "basis": "`.length` returns how many items are in the array."
+  },
+  "a-10694": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-10695": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct!"
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-10700": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, indexing with [0] does it without mutating the array."
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-10724": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Close, but check whether `.length` is a property or a method you call."
+    },
+    "certainty": "high",
+    "basis": ".length returns how many items are in the array."
+  },
+  "a-10727": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-10728": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-10744": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-10746": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "`.length` returns how many items are in the array."
+  },
+  "a-10747": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "Good idea using length to find the last index, but check how you're accessing `length` - is it a property or a method?"
+    },
+    "certainty": "medium",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-10752": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-10753": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct."
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-10754": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct, zero-indexed to the 6th element."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-10756": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Check your indexing — that's not the 6th element since arrays start counting from 0."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-10757": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Check your indexing — arrays start counting from 0, so index 6 wouldn't give you the 6th element."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-10759": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, indexing with [0] reads without removing."
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-10763": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct, index 5 gets the 6th element."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-10777": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "Close idea, but check your brackets—right now this creates a new array instead of indexing into `someArray`."
+    },
+    "certainty": "medium",
+    "basis": "Array indexes start at 0, not 1. [...] someArray[i] doesn't exist."
+  },
+  "a-10800": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "That works — `Array(user1, user2, user3)` builds the same array as a literal would."
+    },
+    "certainty": "medium",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-10802": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "Good structure, but check your syntax—there's a missing quote before Dominique that would break this code."
+    },
+    "certainty": "medium",
+    "basis": "To add an element to an array ... Arrays store collections of related items."
+  },
+  "a-10804": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "That's it — a single array with all three names."
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-10805": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "You've got the right idea, but check your syntax—what needs to separate each item in the array?"
+    },
+    "certainty": "high",
+    "basis": "const shoppingList = [\n  \"Apple\",\n  \"Banana\",\n  \"Carrot\",\n]"
+  },
+  "a-10806": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Try that in your head (or in the console) — what does `firstArray + secondArray` actually produce before you wrap it in brackets?"
+    },
+    "certainty": "high",
+    "basis": ""
+  },
+  "a-10807": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct, .concat combines the arrays nicely."
+    },
+    "certainty": "high",
+    "basis": ""
+  },
+  "a-10808": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "You've got the right structure, but check the syntax between each item—something's missing there."
+    },
+    "certainty": "medium",
+    "basis": "Arrays store collections of related items. (shown as a comma-separated list in every example)"
+  },
+  "a-10811": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Yep, that correctly combines the two arrays into one."
+    },
+    "certainty": "medium",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-10890": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-10891": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, `.pop` is right."
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-10892": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Right idea—just watch that missing quote before Dominique."
+    },
+    "certainty": "medium",
+    "basis": "Accept an answer that shows the right mental model, even if it is informal, slightly incomplete, or has typos."
+  },
+  "a-10893": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nice, exactly right."
+    },
+    "certainty": "high",
+    "basis": "const shoppingList = [\"Apple\",\"Banana\",\"Carrot\",]"
+  },
+  "a-10965": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "`.length` returns how many items are in the array."
+  },
+  "a-10968": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-10969": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-10970": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "slice returns a new array, not a single element—how would you grab just the first value?"
+    },
+    "certainty": "medium",
+    "basis": "Use `.shift` to remove an element from the beginning of an array... (lesson doesn't cover slice, and reading a single element from the start is typically done via `arrayName[0]`)"
+  },
+  "a-10977": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Check your index math—what's at position `arrayName.length` versus the last valid index?"
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1. ... This will break because the length of the array is `3`, and `someArray[3]` doesn't exist."
+  },
+  "a-10978": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "That works—`.at(5)` grabs the 6th element since indexing starts at 0."
+    },
+    "certainty": "medium",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-10992": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, .length is exactly right."
+    },
+    "certainty": "high",
+    "basis": ".length returns how many items are in the array."
+  },
+  "a-11003": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "You've got the right idea with .length, but you need to say exactly how x relates to the length — what's the actual index of the last element?"
+    },
+    "certainty": "medium",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-11007": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nice, that's exactly it."
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-11013": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nice, that's it."
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-11015": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Check your indexing—arrays start at 0, so index 6 wouldn't be the 6th element."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-11019": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "That works! Simpler would be to just write `const users = [user1, user2, user3]` directly."
+    },
+    "certainty": "medium",
+    "basis": "Arrays store collections of related items.\nconst shoppingList = [\"Apple\",\"Banana\",\"Carrot\",]"
+  },
+  "a-11021": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "You spread firstArray, but you hardcoded the letters instead of using secondArray — what would make this work for any secondArray, not just this one?"
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-11023": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "You spread firstArray but didn't actually use secondArray—what if you didn't know its contents ahead of time?"
+    },
+    "certainty": "medium",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-11025": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Yep, spread syntax combines them correctly."
+    },
+    "certainty": "medium",
+    "basis": ""
+  },
+  "a-11096": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, indexing with [0] reads it without removing it."
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-11099": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct."
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-11228": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "You've got the right tool, but be careful with wording — length tells you the number of elements, not indexes (the lesson specifically calls out that these aren't the same thing)."
+    },
+    "certainty": "medium",
+    "basis": "`.length` returns how many items are in the array. ... the number of items will always be 1 more than the last valid index."
+  },
+  "a-11348": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-11349": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-11350": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Right idea—using the index to access without removing. For the start of the array specifically, that'd be index 0."
+    },
+    "certainty": "medium",
+    "basis": "Array indexes start at 0, not 1. The memory address the computer stores for the location of the array is the location of the first element and the index you pass in is an \"offset\""
+  },
+  "a-11356": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, `array[0]` gives you the first element without removing it."
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-11357": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "You're on the right track using length to locate the last item, but be careful — length itself isn't the same as the last valid index. What do you need to do to length to get there?"
+    },
+    "certainty": "medium",
+    "basis": "Array indexes start at 0, not 1. ... This is called an \"off by one error\""
+  },
+  "a-11359": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "You've got the right index, but how do you actually use it to access the element—what's the syntax?"
+    },
+    "certainty": "medium",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-11374": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "That's it."
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-11375": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "You've got the spread syntax right, but you hardcoded the letters instead of actually combining firstArray and secondArray as given — what if secondArray's values were unknown or changed?"
+    },
+    "certainty": "medium",
+    "basis": "Combine these two arrays: const firstArray = [\"A\", \"B\", \"C\"]; const secondArray = [\"D\", \"E\", \"F\"]"
+  },
+  "a-11516": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Yep, `.at(0)` works just like `arrayName[0]` to peek without mutating."
+    },
+    "certainty": "medium",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-11517": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "That works perfectly for arrays of unknown length since -1 always refers to the last element."
+    },
+    "certainty": "medium",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-11522": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-11545": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "You're on the right track with using `.length`, but you need to be careful about what index that actually gives you - remember indexes start at 0."
+    },
+    "certainty": "medium",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-11546": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nice, that's a clean way to combine them."
+    },
+    "certainty": "high",
+    "basis": ""
+  },
+  "a-11769": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-11770": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct."
+    },
+    "certainty": "high",
+    "basis": "Pop: Remove an element from the end of an array"
+  },
+  "a-11771": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": ".length returns how many items are in the array."
+  },
+  "a-11773": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "slice(5,5) would actually give you an empty array back, not the element itself - try again."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-11863": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "You've got the right idea with length - 1, but `length` on its own isn't referring to anything—how do you get the length of `someArray` specifically?"
+    },
+    "certainty": "medium",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-12061": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nice, exactly right."
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-12062": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Nice, spread syntax combines them cleanly into one array."
+    },
+    "certainty": "medium",
+    "basis": ""
+  },
+  "a-12065": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "`.slice` doesn't directly give you a single element—how would you get just the first value without removing it?"
+    },
+    "certainty": "medium",
+    "basis": "To remove an element from an array: * Use `.shift` to remove an element from the beginning of an array. (no indexing/read-only method taught in this lesson)"
+  },
+  "a-12066": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, index 5 gets the 6th element since arrays are zero-indexed."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-12815": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, .length is the way to go."
+    },
+    "certainty": "high",
+    "basis": ".length returns how many items are in the array."
+  },
+  "a-12818": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-12819": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct!"
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-12820": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Right idea—accessing index 0 reads it without removing it. console.log is just for viewing; the key part is `array[0]`."
+    },
+    "certainty": "medium",
+    "basis": "The memory address the computer stores for the location of the array is the location of the first element and the index you pass in is an \"offset\"..."
+  },
+  "a-12821": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "`.slice` alone returns a new array, not the single element—how would you turn that into just the last value, and how does array length factor in?"
+    },
+    "certainty": "medium",
+    "basis": "Array indexes start at 0, not 1. ... use someArray.length to find the last valid index."
+  },
+  "a-12823": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct, index 5 is the 6th element."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-12923": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nice, that's it."
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-12924": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Yep, that works to combine the arrays."
+    },
+    "certainty": "medium",
+    "basis": ""
+  },
+  "a-13123": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "You're on the right track with `.length`, but what index does that number actually point to, and how do you get the last element's index from it? Also, reading an element isn't the same as logging it.semantically— the expression itself is what matters."
+    },
+    "certainty": "medium",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-13128": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, indexing with [0] reads the first element without touching the array."
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-14498": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's exactly it."
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-14876": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, index 5 for the 6th element since arrays are zero-indexed."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-14878": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, `array[array.length - 1]` is exactly right — good catch on the off-by-one."
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-20064": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Index tells you a location, not the count—what property gives you the total size?"
+    },
+    "certainty": "high",
+    "basis": ".length returns how many items are in the array."
+  },
+  "a-20067": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-20068": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-20070": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Right idea, index 5 gets the 6th element—just remember it's `array[5]`, not `index[5]`."
+    },
+    "certainty": "medium",
+    "basis": "Index: A number representing the location of an individual element"
+  },
+  "a-2382": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's right."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document...just accept that it's a required element of the page for now."
+  },
+  "a-3111": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. * **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-3384": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "You named the right elements, but the lesson explicitly calls these required—don't undercut that by saying there are none."
+    },
+    "certainty": "medium",
+    "basis": "**`<meta charset=\"utf-8\" />`**: ... just accept that it's a required element of the page for now."
+  },
+  "a-3636": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "You've got the general purpose of `<head>` right, but the question asks specifically which elements inside it are required — can you name them?"
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-3864": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-4047": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Title and charset meta are right - the lesson doesn't call out a viewport meta as required, though."
+    },
+    "certainty": "medium",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-4388": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "You've got one of them, but there's another required element in the head besides the title."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-4451": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Right, title and charset are the required pieces, with CSS/JS links as optional additions."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-4544": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "You've listed the overall document structure, but the question asks specifically about what goes inside `<head>` - take another look at what's nested there."
+    },
+    "certainty": "high",
+    "basis": "The head: This is for content that's not intended to show up on the page... <title>: This is what name will show up in the browser tab. <meta charset=\"utf-8\" />: ... required element of the page"
+  },
+  "a-4628": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Title's right, but most of those are optional elements that can go in the head, not required ones — only two things are actually required here."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-4936": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's both of them."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document."
+  },
+  "a-4963": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's right."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document."
+  },
+  "a-5420": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "You've got meta charset, but there's another required element in the head besides that one—what shows up in the browser tab?"
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-5541": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, those are the two required elements."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-5649": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's exactly right."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-5762": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Title's one of them, but there's another required element you're missing."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-5766": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "You got both required elements in there, title and meta — just clean up the wording next time so it reads as a clear list."
+    },
+    "certainty": "medium",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-6007": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, title and charset meta tag are the required elements."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. * **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document."
+  },
+  "a-6008": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, title and meta charset are the required elements."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-6427": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "**`<title>`**: This is what name will show up in the browser tab. **`<meta charset=\"utf-8\" />`**: This indicates the character encoding for the document... just accept that it's a required element of the page for now."
+  },
+  "a-8635": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "`.length` returns how many items are in the array."
+  },
+  "a-8638": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-8640": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct!"
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-8647": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Right idea—indexing with [0] reads without removing. Watch your brackets though, `console.log` should use parentheses, not square brackets."
+    },
+    "certainty": "medium",
+    "basis": "The memory address the computer stores for the location of the array is the location of the first element and the index you pass in is an \"offset\""
+  },
+  "a-8648": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Negative indexing like `array[-1]` doesn't work in JS the way it does in some other languages—how else could you calculate the last index using something you know about the array?"
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-8652": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Right idea with the zero-based index, but double check your syntax—console.log takes parentheses, not brackets."
+    },
+    "certainty": "medium",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-8669": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nice, that's exactly it."
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-8672": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nice, concat combines them correctly."
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-9273": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": ".length returns how many items are in the array."
+  },
+  "a-9277": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "That removes from the end, not the start—check the other method name."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-9278": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Check your terms again—shift removes from the other end of the array."
+    },
+    "certainty": "high",
+    "basis": "Pop: Remove an element from the end of an array"
+  },
+  "a-9279": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "reject",
+      "feedback": "Slice could work, but you'd need to specify how—what indexes would you pass in to grab just the first element?"
+    },
+    "certainty": "medium",
+    "basis": "To remove an element from an array: ... Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-9286": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, zero-indexed so [5] gets you the 6th element."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-9294": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "const shoppingList = [\"Apple\",\"Banana\",\"Carrot\",]"
+  },
+  "a-9299": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nice, spread syntax works perfectly here."
+    },
+    "certainty": "high",
+    "basis": ""
+  },
+  "a-9644": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "`.length` returns how many items are in the array."
+  },
+  "a-9646": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": ".length returns how many items are in the array."
+  },
+  "a-9648": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, .pop is right."
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-9651": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "That removes from the end, not the start—check the method names again."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-9652": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "That's not it—check which method removes from the end versus which adds to the front."
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-9653": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "Check your index math—arrays are zero-indexed, so what index gets you the 6th element?"
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-9696": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "const shoppingList = [\n  \"Apple\",\n  \"Banana\",\n  \"Carrot\",\n]"
+  },
+  "a-9698": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nice, that's exactly it."
+    },
+    "certainty": "high",
+    "basis": "Arrays store collections of related items."
+  },
+  "a-9744": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-9745": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, indexing with [0] does it without mutating the array."
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-9746": {
+    "decision": {
+      "action": "record",
+      "verdict": "reject",
+      "feedback": "That works for this specific array, but the question is about an array of *unknown* length—how would you find the last index without knowing it ahead of time?"
+    },
+    "certainty": "high",
+    "basis": "Array indexes start at 0, not 1."
+  },
+  "a-9748": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Correct, index 5 is the 6th element since arrays are zero-indexed."
+    },
+    "certainty": "high",
+    "basis": "shoppingList[1], // \"Banana\", the second item on the list"
+  },
+  "a-9757": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Right idea, bundling them into one array—just double check that stray missing quote after \"Pat.\""
+    },
+    "certainty": "medium",
+    "basis": "Accept an answer that shows the right mental model, even if it is informal, slightly incomplete, or has typos."
+  },
+  "a-9761": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Spread operator does the job perfectly."
+    },
+    "certainty": "high",
+    "basis": ""
+  },
+  "a-9812": {
+    "decision": {
+      "action": "defer",
+      "reason": "certainty",
+      "verdict": "accept",
+      "feedback": "Correct, .concat does the job here."
+    },
+    "certainty": "medium",
+    "basis": ""
+  },
+  "a-9813": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nicely done."
+    },
+    "certainty": "high",
+    "basis": "const shoppingList = [\"Apple\", \"Banana\", \"Carrot\",]"
+  },
+  "a-9818": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.pop` to remove an element from the end of an array"
+  },
+  "a-9819": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "Use `.shift` to remove an element from the beginning of an array"
+  },
+  "a-9822": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Yep, that's it."
+    },
+    "certainty": "high",
+    "basis": "`.length` returns how many items are in the array."
+  },
+  "a-9972": {
+    "decision": {
+      "action": "record",
+      "verdict": "accept",
+      "feedback": "Nice, exactly right."
+    },
+    "certainty": "high",
+    "basis": "const shoppingList = [\"Apple\",\"Banana\",\"Carrot\",]"
+  }
+}

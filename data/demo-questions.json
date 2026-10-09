@@ -1,0 +1,74 @@
+[
+  {
+    "id": "js-arrays-questions-question-19",
+    "slice": "arrays",
+    "learners": 14,
+    "rejectedLearners": 8,
+    "acceptedLearners": 12,
+    "notedRejections": 8
+  },
+  {
+    "id": "js-arrays-questions-question-8",
+    "slice": "arrays",
+    "learners": 12,
+    "rejectedLearners": 9,
+    "acceptedLearners": 9,
+    "notedRejections": 8
+  },
+  {
+    "id": "html-questions-1-question-9",
+    "slice": "html",
+    "learners": 14,
+    "rejectedLearners": 5,
+    "acceptedLearners": 13,
+    "notedRejections": 4
+  },
+  {
+    "id": "js-arrays-questions-question-10",
+    "slice": "arrays",
+    "learners": 14,
+    "rejectedLearners": 4,
+    "acceptedLearners": 13,
+    "notedRejections": 3
+  },
+  {
+    "id": "js-arrays-questions-question-2",
+    "slice": "arrays",
+    "learners": 15,
+    "rejectedLearners": 3,
+    "acceptedLearners": 13,
+    "notedRejections": 3
+  },
+  {
+    "id": "js-arrays-questions-question-20",
+    "slice": "arrays",
+    "learners": 13,
+    "rejectedLearners": 3,
+    "acceptedLearners": 11,
+    "notedRejections": 3
+  },
+  {
+    "id": "js-arrays-questions-question-5",
+    "slice": "arrays",
+    "learners": 15,
+    "rejectedLearners": 3,
+    "acceptedLearners": 14,
+    "notedRejections": 3
+  },
+  {
+    "id": "js-arrays-questions-question-6",
+    "slice": "arrays",
+    "learners": 15,
+    "rejectedLearners": 3,
+    "acceptedLearners": 14,
+    "notedRejections": 3
+  },
+  {
+    "id": "js-arrays-questions-question-7",
+    "slice": "arrays",
+    "learners": 12,
+    "rejectedLearners": 4,
+    "acceptedLearners": 12,
+    "notedRejections": 3
+  }
+]

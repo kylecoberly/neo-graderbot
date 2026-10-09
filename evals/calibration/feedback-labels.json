@@ -1,0 +1,284 @@
+{
+  "run": {
+    "commit": "c8e9-dirty",
+    "agent": "anthropic:claude-haiku-4-5",
+    "judge": "anthropic:claude-opus-5",
+    "retrieval": "on",
+    "policy": "on",
+    "repetitions": "3",
+    "label": "r3-policy"
+  },
+  "instructions": "Set each \"label\" to \"hint\" (points at the gap without giving the answer), \"reveals\" (a learner could copy the answer out of it) or \"wrong\" (says something false about the answer). Read the cases in feedback-labels.md.",
+  "entries": [
+    {
+      "n": 1,
+      "row": "a-9278",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-6",
+      "answer": ".shift",
+      "feedback": "That removes from the front. Read the lesson again and look for the method that removes from the end.",
+      "label": "hint"
+    },
+    {
+      "n": 2,
+      "row": "a-4388",
+      "slice": "html",
+      "questionId": "html-questions-1-question-9",
+      "answer": "The title is always required in the head tag. ",
+      "feedback": "You've got one of them—what about the other required element in the `<head>` that the lesson calls out?",
+      "label": "hint"
+    },
+    {
+      "n": 3,
+      "row": "a-9691",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-17",
+      "answer": "Remove an element from front of array",
+      "feedback": "You're describing what `.shift()` does—check the lesson again and notice which method adds versus removes.",
+      "label": "hint"
+    },
+    {
+      "n": 4,
+      "row": "a-5420",
+      "slice": "html",
+      "questionId": "html-questions-1-question-9",
+      "answer": "The meta charset tag is also required.\n\n```html\n<meta charset=\"utf-8\">\n```",
+      "feedback": "You've correctly identified one required element in the `<head>`, but the question asks for all the required elements—what else needs to be there?",
+      "label": "hint"
+    },
+    {
+      "n": 5,
+      "row": "a-10689",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-2",
+      "answer": "using the .list method will allow us to determine how many items are contained within an array. It is important to note that this length sum will NOT be a 0 start, that is to say the length will start with 1 not 0.",
+      "feedback": "You've got the right idea about the non-zero-based part, but check the name of the property you're using to get the length of an array.",
+      "label": "hint"
+    },
+    {
+      "n": 6,
+      "row": "a-3384",
+      "slice": "html",
+      "questionId": "html-questions-1-question-9",
+      "answer": "there are no REQUIRED elements, but essential minimums should include meta charset and title",
+      "feedback": "The lesson calls both `<title>` and `<meta charset>` required elements of the `<head>`. What's the distinction you're making between 'required' and 'essential minimums'?",
+      "label": "reveals"
+    },
+    {
+      "n": 7,
+      "row": "a-11516",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-7",
+      "answer": "```js\narrayName.at(0)\n```",
+      "feedback": "The `.at()` method works, but it's not covered in the lesson—and there's a simpler approach using what you learned about array indexing. What would you use to read the first element?",
+      "label": "hint"
+    },
+    {
+      "n": 8,
+      "row": "a-7848",
+      "slice": "html",
+      "questionId": "html-questions-1-question-4",
+      "answer": "```html\n<!doctype> \n`````\n\nDeclares the document is being written in HTML 5.",
+      "feedback": "You've got the right idea about what it declares, but look at the actual syntax in the lesson—the doctype tag needs something after the word doctype.",
+      "label": "hint"
+    },
+    {
+      "n": 9,
+      "row": "a-11003",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-8",
+      "answer": "In a two step process; You would first determine the length of the array using .length, then you would then use the console.log(someArray[x]) where x is the index position of the last element in the array ",
+      "feedback": "You've got the right approach—use `.length` to find where the last element is—but you need to be precise about how to calculate that index. What would `x` actually be if the array has length 3?",
+      "label": "hint"
+    },
+    {
+      "n": 10,
+      "row": "a-3959",
+      "slice": "html",
+      "questionId": "html-questions-1-question-2",
+      "answer": "Used in the opening tag to specify the type of element it is.",
+      "feedback": "That sounds more like what a tag does. An attribute is something that goes inside the tag—look at the examples with `id`, `class`, `type`, and `required` to see what we're talking about.",
+      "label": "hint"
+    },
+    {
+      "n": 11,
+      "row": "a-10747",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-8",
+      "answer": "```js\nconst i = someArray.length()\nsomeArray[i-1]\n```",
+      "feedback": "You're on the right track with indexing from the end, but `.length` is a property, not a method—no parentheses needed. Also double-check your index math: if the length is 3, what index holds the last element?",
+      "label": "hint"
+    },
+    {
+      "n": 12,
+      "row": "a-4377",
+      "slice": "html",
+      "questionId": "html-questions-1-question-2",
+      "answer": "It is used with the HTML element tag and specifies the path, link, or additional information in an HTML element tag. ",
+      "feedback": "You're thinking of how attributes are used, but your answer mixes together different kinds of things attributes do. What is an attribute itself—what's its role or structure in an HTML tag?",
+      "label": "hint"
+    },
+    {
+      "n": 13,
+      "row": "a-10793",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-13",
+      "answer": "When one tries to access an array that might not exist by forgetting the index value starts with 0 ",
+      "feedback": "You've got part of it—zero-based indexing is definitely involved—but an off-by-one error is more specific than just forgetting that arrays start at 0. Think about what happens when you use `<=` instead of `<` in a loop condition, or when you're off by one in your count.",
+      "label": "hint"
+    },
+    {
+      "n": 14,
+      "row": "a-3519",
+      "slice": "html",
+      "questionId": "html-questions-1-question-6",
+      "answer": "The syntax will be incorrect and you will get an error.",
+      "feedback": "Not quite—most browsers are pretty forgiving about unclosed tags. Look at the lesson passage about HTML Style: what actually happens when tags aren't closed?",
+      "label": "hint"
+    },
+    {
+      "n": 15,
+      "row": "a-12924",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-20",
+      "answer": "Const newArray = firstArray.concat(secondArray);",
+      "feedback": "You've got the right idea about combining arrays, but the lesson didn't cover the `.concat` method—take another look at what tools the lesson actually introduces for working with arrays.",
+      "label": "hint"
+    },
+    {
+      "n": 16,
+      "row": "a-4953",
+      "slice": "html",
+      "questionId": "html-questions-1-question-1",
+      "answer": "The beginning of a directive provided by the user to instruct the browser how content should be viewed. ",
+      "feedback": "You're on the right track that tags instruct the browser, but the lesson describes tags more specifically in terms of their structure. Look at the anatomy diagrams and the components that make up a tag.",
+      "label": "hint"
+    },
+    {
+      "n": 17,
+      "row": "a-10364",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-8",
+      "answer": "use .length to determine the length and then display that item based on the index.",
+      "feedback": "You're on the right track with `.length`, but think through the math: if an array has length 3, what index gives you the last element?",
+      "label": "hint"
+    },
+    {
+      "n": 18,
+      "row": "a-2378",
+      "slice": "html",
+      "questionId": "html-questions-1-question-6",
+      "answer": "everything you put after would be considered a part of the tag, likely would cause the page to not display correctly",
+      "feedback": "You're on the right track that it causes display problems, but think more carefully about what the browser does with the unclosed tag and the content that follows it.",
+      "label": "wrong"
+    },
+    {
+      "n": 19,
+      "row": "a-10035",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-7",
+      "answer": ".index[0]",
+      "feedback": "You're thinking about accessing by index, which is the right idea. But `.index[0]` isn't the syntax—how would you actually write it to get the first element of an array called `myArray`?",
+      "label": "hint"
+    },
+    {
+      "n": 20,
+      "row": "a-4960",
+      "slice": "html",
+      "questionId": "html-questions-1-question-6",
+      "answer": "The tag will not function. ",
+      "feedback": "That's too simple—browsers are pretty forgiving about unclosed tags. What actually happens depends on which tag it is and what comes after it. Look at the example in the lesson again and think about how the browser might interpret the rest of the page.",
+      "label": "hint"
+    },
+    {
+      "n": 21,
+      "row": "a-9649",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-3",
+      "answer": ".push or ...array, [number]",
+      "feedback": "You've got `.push` right, but what is the `...array, [number]` syntax about? That doesn't match how you'd actually add an element to an array.",
+      "label": "hint"
+    },
+    {
+      "n": 22,
+      "row": "a-3103",
+      "slice": "html",
+      "questionId": "html-questions-1-question-2",
+      "answer": "A piece of the markup language that controls the behavior of the element within the tag",
+      "feedback": "You're describing what an attribute does, but the question asks what it *is*. Think about the structure: where does an attribute live, and what does it look like in the tag itself?",
+      "label": "hint"
+    },
+    {
+      "n": 23,
+      "row": "a-11360",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-11",
+      "answer": "It allows you to add to an existing array. Used when all of the items from an array need to be used for another list. ",
+      "feedback": "You've got the idea that spreading is useful for combining arrays, but you're missing the key advantage shown in the lesson. What makes spreading different from methods like `.push`?",
+      "label": "hint"
+    },
+    {
+      "n": 24,
+      "row": "a-4904",
+      "slice": "html",
+      "questionId": "html-questions-1-question-2",
+      "answer": "The attribute is the property of a tag to provide additional descriptive information.",
+      "feedback": "You're on the right track that attributes provide additional information, but your wording is a bit vague. Think about what an attribute actually is in the syntax of an HTML tag—what does it look like, and how is it connected to the tag itself?",
+      "label": "hint"
+    },
+    {
+      "n": 25,
+      "row": "a-12055",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-13",
+      "answer": "Trying to access an index that doesn't exist. Indexes begin at 0, not 1.",
+      "feedback": "You've got the zero-based indexing right, but an off-by-one error is more specific than just accessing a nonexistent index—it's when your loop or calculation is off by exactly one, usually because you miscounted. What's the difference between `i <= someArray.length` and `i < someArray.length`?",
+      "label": "reveals"
+    },
+    {
+      "n": 26,
+      "row": "a-5752",
+      "slice": "html",
+      "questionId": "html-questions-1-question-6",
+      "answer": "You get an error that might not display on the page",
+      "feedback": "Not quite—browsers are actually pretty forgiving with unclosed tags. What you said suggests something breaks, but the browser has ways of handling it. Think about what the browser might do to recover when it encounters an unclosed tag.",
+      "label": "hint"
+    },
+    {
+      "n": 27,
+      "row": "a-12820",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-7",
+      "answer": "Using console.log and searching by the index number of 0 since arrays are zero-based. ",
+      "feedback": "You've got the right index, but `console.log` is for printing—that's not reading an element into a variable so you can use it. What syntax would you use to access an array element by its index?",
+      "label": "hint"
+    },
+    {
+      "n": 28,
+      "row": "a-5995",
+      "slice": "html",
+      "questionId": "html-questions-1-question-1",
+      "answer": "A tag is a way to mark a document with HTML so that it can be displayed in a browser. There are numerous tag possibilities that can be used based off what you are trying to accomplish with the particular content that you are using the tag on. ",
+      "feedback": "You're right that tags mark content and there are different ones for different purposes. But what actually *is* a tag—what are its parts? Look at the anatomy diagram in the lesson.",
+      "label": "hint"
+    },
+    {
+      "n": 29,
+      "row": "a-12054",
+      "slice": "arrays",
+      "questionId": "js-arrays-questions-question-12",
+      "answer": "All of the items that are stored in an array.",
+      "feedback": "You're describing the elements of an array, not the index itself. What is an index in terms of what it represents or what you use it for?",
+      "label": "hint"
+    },
+    {
+      "n": 30,
+      "row": "a-3108",
+      "slice": "html",
+      "questionId": "html-questions-1-question-6",
+      "answer": "Some browsers could fix the error, however some won't and you can't guarantee your element will work properly",
+      "feedback": "You're touching on something real—browsers do try to be forgiving—but the lesson is asking about what *happens*, not whether it might work anyway. What does the unclosed tag actually do to the page?",
+      "label": "hint"
+    }
+  ]
+}

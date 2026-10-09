@@ -1,0 +1,6 @@
+# Untracked working files must never reach a CLI upload: local scratch can hold
+# unredacted screenshots, and the eval rounds hold model outputs.
+.superpowers
+evals/.results
+data/.queue
+.env*
