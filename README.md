@@ -3,14 +3,20 @@
 Neo GraderBot is a grading assistant for software engineering teachers. It
 grades short-answer questions against exemplars or lesson materials, writes feedback, and defers to the assessor with its reasoning when it's not sure.
 
-![An instructor asks a question, four learners answer, GraderBot files three grades as ready and flags one](docs/images/what-it-does.svg)
+[![A graded page in the live demo: my verdicts and notes beside GraderBot's, with the answers it flagged for me, the one we disagreed on, and an independent judge's read of both](docs/images/grade-comparison.png)](https://neo-graderbot.vercel.app)
 
 ## Live Demo
 
-**[Watch the walkthrough](https://youtu.be/-VpBPZE6JOM)** (4 minutes): grading a page, the comparison, where the numbers come from, and what the label audit turned up.
-
-**Try a [Live Demo](https://neo-graderbot.vercel.app):** Grade a page of real
+**Try the [Live Demo](https://neo-graderbot.vercel.app):** Grade a page of real
 software engineering student responses the way I did in 2022, and then compare your scores and feedback with GraderBot's.
+
+**Watch the walkthrough** (4 minutes): grading a page, the comparison, where the numbers come from, and what the label audit turned up.
+
+[![Watch the 4-minute walkthrough on YouTube](docs/images/walkthrough-video.jpg)](https://youtu.be/-VpBPZE6JOM)
+
+## What it does
+
+![An instructor asks a question, four learners answer, GraderBot files three grades as ready and flags one](docs/images/what-it-does.svg)
 
 ## Why Neo GraderBot?
 
@@ -243,12 +249,16 @@ What each step taught me:
 
 ### Traces
 
-Each round is a LangSmith experiment (links in
-[docs/results.md](docs/results.md)). Filter by `recorded_false_reject = 1`,
-open a row, and you get guard → retrieve → judge → act, the passages, the
-raw JSON, each policy check, and the tool call. The hosted demo traces to
-`neo-graderbot-demo`, and every page a visitor submits labels the agent's
-runs with `visitor_agrees`, so the disagreements are one filter away.
+Every round is a public LangSmith experiment, no account needed: the
+[core dataset](https://smith.langchain.com/public/1e735ea7-a311-4128-9eee-2ad0bb780537/d)
+and the
+[adversarial dataset](https://smith.langchain.com/public/004115ef-bfd7-436c-82fe-d65e61059fc8/d)
+list their experiments, and [docs/results.md](docs/results.md) links each
+round directly. Filter by `recorded_false_reject = 1`, open a row, and you
+get guard → retrieve → judge → act, the passages, the raw JSON, each policy
+check, and the tool call. The hosted demo traces to a private project,
+because it holds what visitors type; every page a visitor submits labels the
+agent's runs with `visitor_agrees`, so the disagreements are one filter away.
 
 ### In production
 
